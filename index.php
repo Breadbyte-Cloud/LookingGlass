@@ -20,6 +20,7 @@ $allowed_commands = [
     'traceroute' => ['command' => 'traceroute', 'args' => ''],
     'traceroute6' => ['command' => 'traceroute', 'args' => ''],
     'mtr' => ['command' => 'mtr', 'args' => '--report'],
+	'mtr6' => ['command' => 'mtr -6', 'args' => '--report'],
 ];
 
 // Check if form is submitted

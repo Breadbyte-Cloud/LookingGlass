@@ -128,18 +128,12 @@ button, a, img {
     display: none;
 }
 
-.copied-feedback {
-    color: green;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
 #map { width: 50%; height: 545px; }
 
 @media only screen and (max-width: 768px) {
 body {
 	font-size: 14px;
-	padding: 10px; 
+	padding-top: 10px; 
 }
 
 .container { 
@@ -160,4 +154,13 @@ body {
 	height: 250px; 
 }
 	
+textarea {margin-top: 10px;
+	background-color: #313441;
+	color: #F1F1F1;
+	border-color: #4F525E;
+	width: 90%;
+	height: 250px;
+	font-size: 12px;
+}
+
 }
