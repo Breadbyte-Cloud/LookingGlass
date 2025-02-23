@@ -90,15 +90,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ajax'])) {
 					<div class="file">
 						<a href="<?php echo $file; ?>" download><?php echo $size; ?></a>
 						<div>
-						<input onclick="copyText('url-<?php echo $file; ?>')" type="text" id="url-<?php echo $file; ?>" value="https:/<?php echo $_SERVER['HTTP_HOST'];?>/<?php echo $file; ?>" readonly>
+						<input onclick="copyText('url-<?php echo $file; ?>')" type="text" id="url-<?php echo $file; ?>" value="https://<?php echo $_SERVER['HTTP_HOST'];?>/<?php echo $file; ?>" readonly>
 						<img onclick="copyText('url-<?php echo $file; ?>')" src="images/copy.svg" alt="Icon" width="10" height="10">
 						</div>
 						<div>
-						<input onclick="copyText('curl-<?php echo $file; ?>')" type="text" id="curl-<?php echo $file; ?>" value="curl -o /dev/null https:/<?php echo $_SERVER['HTTP_HOST'];?>/<?php echo $file; ?>" readonly>
+						<input onclick="copyText('curl-<?php echo $file; ?>')" type="text" id="curl-<?php echo $file; ?>" value="curl -o /dev/null https://<?php echo $_SERVER['HTTP_HOST'];?>/<?php echo $file; ?>" readonly>
 						<img onclick="copyText('curl-<?php echo $file; ?>')" src="images/copy.svg" alt="Icon" width="10" height="10">
 						</div>
 						<div>
-						<input onclick="copyText('wget-<?php echo $file; ?>')" type="text" id="wget-<?php echo $file; ?>" value="wget -O /dev/null https:/<?php echo $_SERVER['HTTP_HOST'];?>/<?php echo $file; ?>" readonly>
+						<input onclick="copyText('wget-<?php echo $file; ?>')" type="text" id="wget-<?php echo $file; ?>" value="wget -O /dev/null https://<?php echo $_SERVER['HTTP_HOST'];?>/<?php echo $file; ?>" readonly>
 						<img onclick="copyText('wget-<?php echo $file; ?>')" src="images/copy.svg" alt="Icon" width="10" height="10">
 						</div>
 					</div>
